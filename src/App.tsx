@@ -1,5 +1,6 @@
 import { Categories } from "./components/Categories";
 import { Header } from "./components/Header";
+import { ImageSection } from "./components/ImageSection";
 import { PaymentItems } from "./components/PaymentItems";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
             <main>
                 <PaymentItems />
                 <Categories />
+                <ImageSection />
             </main>
         </>
     );
