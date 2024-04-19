@@ -6,12 +6,10 @@ interface CategoryCardProps {
 
 const CategoryCard = ({ imageSrc, imageAlt, name }: CategoryCardProps) => {
     return (
-        <li>
-            <a href="/">
-                <img src={imageSrc} alt={imageAlt} />
-                <p>{name}</p>
-            </a>
-        </li>
+        <a href="/">
+            <img src={imageSrc} alt={imageAlt} />
+            <p>{name}</p>
+        </a>
     );
 };
 

@@ -23,17 +23,19 @@ const ProductHighlightCard = ({
     classProp,
 }: ProductHighlightCardProps) => {
     return (
-        <li className={styles[classProp]}>
-            <div>
-                <Title text={title} classProp="titleProdHighlight" />
-                <p>{description}</p>
-            </div>
+        <article className={styles[classProp]}>
+            {title && (
+                <div>
+                    <Title text={title} classProp="titleProdHighlight" />
+                    <p>{description}</p>
+                </div>
+            )}
             <div>
                 <p>{buttonText}</p>
                 <img src={buttonArrow} alt={buttonAlt} />
             </div>
             <img src={productImg} alt={productImgAlt} />
-        </li>
+        </article>
     );
 };
 

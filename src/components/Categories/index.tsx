@@ -6,7 +6,7 @@ const Categories = () => {
     return (
         <section>
             <Title text="Compre por categoria" classProp="" />
-            <ul>
+            <article>
                 {CategoriesData.map((category, index) => (
                     <CategoryCard
                         key={index}
@@ -15,7 +15,7 @@ const Categories = () => {
                         imageAlt={category.imgAlt}
                     />
                 ))}
-            </ul>
+            </article>
         </section>
     );
 };
