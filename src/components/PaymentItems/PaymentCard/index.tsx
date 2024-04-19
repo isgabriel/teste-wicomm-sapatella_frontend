@@ -4,17 +4,14 @@ interface PaymentCardProps {
     imageSrc: string;
     imageAlt: string;
     text: string;
-    key: number;
 }
 
-const PaymentCard = ({ imageSrc, imageAlt, text, key }: PaymentCardProps) => {
+const PaymentCard = ({ imageSrc, imageAlt, text }: PaymentCardProps) => {
     return (
-        <>
-            <li key={key}>
-                <img src={imageSrc} alt={imageAlt} />
-                <p>{text}</p>
-            </li>
-        </>
+        <li>
+            <img src={imageSrc} alt={imageAlt} />
+            <p>{text}</p>
+        </li>
     );
 };
 
