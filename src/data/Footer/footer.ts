@@ -1,9 +1,17 @@
 const FooterData = {
-    title: "",
     social: [
-        { image: "", imageAlt: "" },
-        { image: "", imageAlt: "" },
-        { image: "", imageAlt: "" },
+        {
+            image: "assets/icons/socials/InstagramLogo.svg",
+            imageAlt: "ícone do instagram",
+        },
+        {
+            image: "assets/icons/socials/WhatsappLogo.svg",
+            imageAlt: "ícone do whatsapp",
+        },
+        {
+            image: "assets/icons/socials/FacebookLogo.svg",
+            imageAlt: "ícone do facebook",
+        },
     ],
     about: {
         title: "SOBRE NÓS",
@@ -18,30 +26,59 @@ const FooterData = {
         ],
     },
     myAccount: {
-        title: "",
-        nav: [],
+        title: "MINHA CONTA",
+        nav: ["Meus Dados", "Meus Pedidos", "Login"],
     },
     support: {
-        title: "",
-        nav: [],
+        title: "SUPORTE E POLÍTICAS",
+        nav: [
+            "Trocas e Devoluções",
+            "Dúvidas Frequentes",
+            "Fale Conosco",
+            "Super Natal",
+        ],
     },
     payments: [
-        { image: "", imageAlt: "cartão visa" },
-        { image: "", imageAlt: "cartão mastercard" },
-        { image: "", imageAlt: "cartão hipercard" },
-        { image: "", imageAlt: "pix" },
-        { image: "", imageAlt: "cartão amex" },
-        { image: "", imageAlt: "cartão elo" },
-        { image: "", imageAlt: "boleto" },
+        {
+            image: "assets/icons/payments/visa.svg",
+            imageAlt: "cartão visa",
+        },
+        {
+            image: "assets/icons/payments/master.svg",
+            imageAlt: "cartão mastercard",
+        },
+        {
+            image: "assets/icons/payments/hiper.svg",
+            imageAlt: "cartão hipercard",
+        },
+        { image: "assets/icons/payments/pix.svg", imageAlt: "pix" },
+        {
+            image: "assets/icons/payments/amex.svg",
+            imageAlt: "cartão amex",
+        },
+        {
+            image: "assets/icons/payments/elo.svg",
+            imageAlt: "cartão elo",
+        },
+        {
+            image: "assets/icons/payments/boleto.svg",
+            imageAlt: "boleto",
+        },
     ],
     safety: [
-        { image: "", imageAlt: "certificado pci e vtex" },
-        { image: "", imageAlt: "imagem com cadeado e texto de criptigrafia" },
+        {
+            image: "assets/icons/safety/vtexPCI.svg",
+            imageAlt: "certificado pci e vtex",
+        },
+        {
+            image: "assets/icons/safety/encrypt.svg",
+            imageAlt: "imagem com cadeado e texto de criptigrafia",
+        },
     ],
     addredd:
         "Somos Sonho LTA - Estrada do Campo D'areia, 182 - Pechincha - Rio de Janeiro/RJ - CEP: 22.743-310",
     cnpj: "CNPJ:28.445.729/0081-75 | © 2024 Todos dos direitos reservados",
-    endLogos: [{ logo: "" }],
+    endLogos: [{ logo: "assets/logo/logoBlack.svg" }],
 };
 
 export { FooterData };
