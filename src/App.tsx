@@ -1,5 +1,6 @@
 import { AboutSection } from "./components/AboutSection";
 import { Categories } from "./components/Categories";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { ImageSection } from "./components/ImageSection";
 import { PaymentItems } from "./components/PaymentItems";
@@ -17,6 +18,7 @@ function App() {
                 <ImageSection />
                 <AboutSection />
                 <RegisterSection />
+                <Footer />
             </main>
         </>
     );
