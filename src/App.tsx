@@ -1,3 +1,4 @@
+import { AboutSection } from "./components/AboutSection";
 import { Categories } from "./components/Categories";
 import { Header } from "./components/Header";
 import { ImageSection } from "./components/ImageSection";
@@ -13,6 +14,7 @@ function App() {
                 <Categories />
                 <ProductHighlight />
                 <ImageSection />
+                <AboutSection />
             </main>
         </>
     );

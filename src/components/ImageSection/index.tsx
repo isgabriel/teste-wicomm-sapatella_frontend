@@ -1,4 +1,8 @@
 const ImageSection = () => {
-    return <img src="assets/images/generalImages/imageSection.svg" alt="" />;
+    return (
+        <section>
+            <img src="assets/images/generalImages/imageSection.svg" alt="" />;
+        </section>
+    );
 };
 export { ImageSection };
