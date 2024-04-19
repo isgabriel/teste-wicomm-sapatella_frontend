@@ -9,7 +9,11 @@ const Header = () => {
             <Logo src="assets/logo/logoWhite.svg" alt="logo branca" />
             <Navbar />
             <div>
-                <Input classProp="inputHeader" type="text" />
+                <Input
+                    classProp="inputHeader"
+                    type="text"
+                    placeholderProp="Buscar"
+                />
                 <button>
                     <img src="assets/icons/header/searchIcon.svg" alt="" />
                 </button>

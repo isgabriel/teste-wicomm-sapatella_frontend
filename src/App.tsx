@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { ImageSection } from "./components/ImageSection";
 import { PaymentItems } from "./components/PaymentItems";
 import { ProductHighlight } from "./components/ProductHighlight";
+import { RegisterSection } from "./components/RegisterSection";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <ProductHighlight />
                 <ImageSection />
                 <AboutSection />
+                <RegisterSection />
             </main>
         </>
     );
