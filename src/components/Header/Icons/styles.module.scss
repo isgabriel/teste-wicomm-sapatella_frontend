@@ -3,4 +3,7 @@
 
 .iconsContainer {
     @include flexRowWithGap(24px);
+    > button > img {
+        cursor: pointer;
+    }
 }

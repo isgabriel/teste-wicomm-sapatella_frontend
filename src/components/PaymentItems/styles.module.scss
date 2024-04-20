@@ -1,0 +1,11 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.paymentItemsContainer {
+    background-color: $grey-light-color;
+
+    > ul {
+        @include flexRowWithGap(97px);
+        @include paddingStyles(32px, 56px);
+    }
+}

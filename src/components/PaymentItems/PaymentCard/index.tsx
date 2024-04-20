@@ -1,4 +1,4 @@
-// import styles from "./styles.module.scss";
+import styles from "./styles.module.scss";
 
 interface PaymentCardProps {
     imageSrc: string;
@@ -8,7 +8,7 @@ interface PaymentCardProps {
 
 const PaymentCard = ({ imageSrc, imageAlt, text }: PaymentCardProps) => {
     return (
-        <li>
+        <li className={styles.listItem}>
             <img src={imageSrc} alt={imageAlt} />
             <p>{text}</p>
         </li>
