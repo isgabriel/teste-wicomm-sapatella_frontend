@@ -20,8 +20,8 @@ function App() {
                 <ImageSection />
                 <AboutSection />
                 <RegisterSection />
-                <Footer />
             </main>
+            <Footer />
         </>
     );
 }
