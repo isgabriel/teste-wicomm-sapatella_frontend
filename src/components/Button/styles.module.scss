@@ -2,11 +2,19 @@
 @use "/src/styles/abstracts/variables" as *;
 
 .registerButton {
-    @include buttonStyles(11px 57px, $brand-color);
-    @include textStyles($medium-text-size, $regular-weight, $white-color);
+    @include buttonStyles(11px 59px, $brand-color, $brand-light-color);
 
-    &:hover {
-        background-color: $brand-light-color;
-        transition: 0.6s;
+    > button {
+        @include textStyles($medium-text-size, $regular-weight, $white-color);
+    }
+}
+
+.btnModal {
+    @include buttonStyles(14px 50px, $brand-color, $brand-light-color);
+
+    cursor: pointer;
+
+    > button {
+        @include textStyles($default-text-size, $regular-weight, $white-color);
     }
 }

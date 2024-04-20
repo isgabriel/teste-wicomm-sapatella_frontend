@@ -19,12 +19,23 @@
     font-weight: $weight;
     color: $color;
 }
-@mixin buttonStyles($padding, $bg) {
+@mixin buttonStyles($padding, $bg, $bg-hover) {
     padding: $padding;
 
     background-color: $bg;
 
     cursor: pointer;
+
+    > button {
+        height: 100%;
+
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-color: $bg-hover;
+        transition: 0.6s;
+    }
 }
 @mixin paddingStyles($vertPadding, $horizPadding) {
     padding: $vertPadding $horizPadding;

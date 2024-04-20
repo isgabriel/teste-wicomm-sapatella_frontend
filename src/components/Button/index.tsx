@@ -6,7 +6,9 @@ interface buttonProps {
 }
 const Button = ({ classProps, text }: buttonProps) => {
     return (
-        <button className={classProps ? styles[classProps] : ""}>{text}</button>
+        <a href="#" className={classProps ? styles[classProps] : ""}>
+            <button>{text}</button>
+        </a>
     );
 };
 

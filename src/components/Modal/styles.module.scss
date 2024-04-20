@@ -1,0 +1,36 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.modalContainer {
+    // padding-top: 60px;
+
+    @include flexColumn();
+    align-items: center;
+
+    position: relative;
+
+    .contentModalDiv {
+        @include paddingStyles(16px, 24px);
+        @include flexRowWithGap(94px);
+        align-items: center;
+
+        background-color: $white-color;
+
+        > p {
+            @include textStyles($big-title-size, $bold-weight, $brand-color);
+
+            > span {
+                @include textStyles(
+                    $medium-text-size,
+                    $regular-weight,
+                    $brand-dark-color
+                );
+            }
+        }
+    }
+}
+
+.btnContainer {
+    position: absolute;
+    bottom: -4px;
+}
