@@ -39,7 +39,12 @@ input {
     cursor: text;
 }
 a {
+    cursor: pointer;
     text-decoration: none;
+
+    > img {
+        cursor: pointer;
+    }
 }
 button {
     background-color: transparent;

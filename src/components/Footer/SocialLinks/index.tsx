@@ -7,16 +7,17 @@ interface SocialLinksProps {
     socialData: SocialItem[];
 }
 
+import styles from "./styles.module.scss";
+
 const SocialLinks = ({ socialData }: SocialLinksProps) => {
-    const ScrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
     return (
-        <a href="#" onClick={ScrollToTop}>
+        <div className={styles.container}>
             {socialData.map((item, index) => (
-                <img src={item.image} alt={item.imageAlt} key={index} />
+                <a href="#" key={index}>
+                    <img src={item.image} alt={item.imageAlt} />
+                </a>
             ))}
-        </a>
+        </div>
     );
 };
 

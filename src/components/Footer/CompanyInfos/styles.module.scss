@@ -1,0 +1,18 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.companyInfosContainer {
+    @include paddingStyles(32px, 0);
+
+    @include flexColumnWithGap(24px);
+    align-items: center;
+
+    @include textStyles($small-text-size, $regular-weight, $grey-dark-color);
+
+    border-top: 1px solid $black02-color;
+
+    > p {
+        @include flexColumnWithGap(5px);
+        align-items: center;
+    }
+}

@@ -3,19 +3,18 @@ interface NavFooterProps {
     navItems: string[];
 }
 
+import { Title } from "../../Title";
+
+import styles from "./styles.module.scss";
+
 const NavFooter = ({ title, navItems }: NavFooterProps) => {
-    const ScrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
     return (
-        <div>
-            <h3>{title}</h3>
+        <div className={styles.container}>
+            <Title classProp="smallTitle" text={title} />
             <ul>
                 {navItems.map((item, index) => (
                     <li key={index}>
-                        <a href="#" onClick={ScrollToTop}>
-                            {item}
-                        </a>
+                        <a href="#">{item}</a>
                     </li>
                 ))}
             </ul>
