@@ -1,0 +1,27 @@
+@mixin flexColumn() {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexRow() {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flexColumnWithGap($gap) {
+    @include flexColumn();
+    gap: $gap;
+}
+@mixin flexRowWithGap($gap) {
+    @include flexRow();
+    gap: $gap;
+}
+@mixin textStyles($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+@mixin buttonStyles($padding) {
+    padding: $padding;
+}
+@mixin paddingStyles($vertPadding, $horizPadding) {
+    padding: $vertPadding $horizPadding;
+}
