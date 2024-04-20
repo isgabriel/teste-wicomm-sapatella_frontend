@@ -1,6 +1,8 @@
+import styles from "./styles.module.scss";
+
 const Icons = () => {
     return (
-        <div>
+        <div className={styles.iconsContainer}>
             <button>
                 <img src="assets/icons/header/userIcon.svg" alt="" />
             </button>

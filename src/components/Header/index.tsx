@@ -3,12 +3,14 @@ import { Logo } from "../Logo";
 import { Icons } from "./Icons";
 import { Navbar } from "./Navbar";
 
+import styles from "./styles.module.scss";
+
 const Header = () => {
     return (
-        <header>
+        <header className={styles.header}>
             <Logo src="assets/logo/logoWhite.svg" alt="logo branca" />
             <Navbar />
-            <div>
+            <div className={styles.inputContainer}>
                 <Input
                     classProp="inputHeader"
                     type="text"

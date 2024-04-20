@@ -4,7 +4,6 @@ const NavbarData: string[] = [
     "Sandálias",
     "Tênis",
     "Bolsas & Acessórios",
-    "OFF",
 ];
 
 export { NavbarData };
