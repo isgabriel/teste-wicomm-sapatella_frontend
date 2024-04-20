@@ -32,7 +32,7 @@ const ProductHighlightCard = ({
                         <p>{description}</p>
                     </section>
                 )}
-                <a className={styles.btnWant}>
+                <a className={styles.btnWant} href="#">
                     <p>{buttonText}</p>
                     <img src={buttonArrow} alt={buttonAlt} />
                 </a>
