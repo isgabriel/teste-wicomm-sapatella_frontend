@@ -1,5 +1,6 @@
-import styles from "./styles.module.scss";
 import { Title } from "../../Title";
+
+import styles from "./styles.module.scss";
 
 interface ProductHighlightCardProps {
     title?: string;
@@ -24,15 +25,17 @@ const ProductHighlightCard = ({
 }: ProductHighlightCardProps) => {
     return (
         <article className={styles[classProp]}>
-            {title && (
-                <div>
-                    <Title text={title} classProp="titleProdHighlight" />
-                    <p>{description}</p>
-                </div>
-            )}
             <div>
-                <p>{buttonText}</p>
-                <img src={buttonArrow} alt={buttonAlt} />
+                {title && (
+                    <section className={styles.productInfos}>
+                        <Title text={title} classProp="mediumTitle" />
+                        <p>{description}</p>
+                    </section>
+                )}
+                <a className={styles.btnWant}>
+                    <p>{buttonText}</p>
+                    <img src={buttonArrow} alt={buttonAlt} />
+                </a>
             </div>
             <img src={productImg} alt={productImgAlt} />
         </article>

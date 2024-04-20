@@ -1,9 +1,11 @@
 import { SandalsData } from "../../data/Sandals/sandals";
 import { ProductHighlightCard } from "./ProductHighlightCard";
 
+import styles from "./styles.module.scss";
+
 const ProductHighlight = () => {
     return (
-        <section>
+        <section className={styles.container}>
             {SandalsData.map((sandal, index) => (
                 <ProductHighlightCard
                     key={index}
