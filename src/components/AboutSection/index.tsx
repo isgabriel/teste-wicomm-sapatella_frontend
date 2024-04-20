@@ -1,18 +1,21 @@
 import { AboutData } from "../../data/About/about";
+import { Title } from "../Title";
+
+import styles from "./styles.module.scss";
 
 const AboutSection = () => {
     return (
-        <section>
+        <section className={styles.aboutContainer}>
             {AboutData.map((item, index) => (
                 <div key={index}>
                     <div>
-                        <h2>{item.title}</h2>
+                        <Title classProp="bigTitle" text={item.title} />
                         <p>{item.description}</p>
                     </div>
                     <img src={item.image} alt={item.imageAlt} />
                 </div>
             ))}
-            <div></div>
+
             <img src="" alt="" />
         </section>
     );
