@@ -7,6 +7,8 @@ import { PaymentItems } from "./components/PaymentItems";
 import { ProductHighlight } from "./components/ProductHighlight";
 import { RegisterSection } from "./components/RegisterSection";
 
+import "./styles/globals.scss";
+
 function App() {
     return (
         <>
