@@ -2,9 +2,11 @@ import { RegisterData } from "../../data/Register/register";
 import { Button } from "../Button";
 import { Input } from "../Input";
 
+import styles from "./styles.module.scss";
+
 const RegisterSection = () => {
     return (
-        <section>
+        <section className={styles.registerContainer}>
             {RegisterData.map((item, index) => (
                 <div key={index}>
                     <h2>
@@ -12,8 +14,14 @@ const RegisterSection = () => {
                         primeira compra!
                     </h2>
                     <div>
-                        <Input placeholderProp={item.inputName} />
-                        <Input placeholderProp={item.inputEmail} />
+                        <Input
+                            classProp="registeInput"
+                            placeholderProp={item.inputName}
+                        />
+                        <Input
+                            classProp="registeInput"
+                            placeholderProp={item.inputEmail}
+                        />
                         <Button classProps="registerButton" text="Cadastrar" />
                     </div>
                 </div>

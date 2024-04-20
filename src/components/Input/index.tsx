@@ -1,9 +1,11 @@
-import styles from "./styles.module.scss";
 interface inputProps {
     classProp?: string;
     type?: string;
     placeholderProp: string;
 }
+
+import styles from "./styles.module.scss";
+
 const Input = ({ classProp, type, placeholderProp }: inputProps) => {
     return (
         <input
