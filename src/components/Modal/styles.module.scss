@@ -2,12 +2,10 @@
 @use "/src/styles/abstracts/variables" as *;
 
 .modalContainer {
-    // padding-top: 60px;
-
-    @include flexColumn();
-    align-items: center;
-
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .contentModalDiv {
         @include paddingStyles(16px, 24px);
@@ -32,5 +30,6 @@
 
 .btnContainer {
     position: absolute;
-    bottom: -4px;
+    bottom: -18px;
+    width: 100%;
 }
