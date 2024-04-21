@@ -11,13 +11,10 @@ const CompanyInfos = () => {
             </p>
             <div>
                 <img
-                    src="/public/assets/logo/footer/wicommLogo.svg"
+                    src="assets/logo/footer/wicommLogo.svg"
                     alt="logo wicomm"
                 />
-                <img
-                    src="/public/assets/logo/footer/vtexLogo.svg"
-                    alt="logo vtex"
-                />
+                <img src="assets/logo/footer/vtexLogo.svg" alt="logo vtex" />
             </div>
         </div>
     );
