@@ -22,3 +22,14 @@
         @include textStyles($default-text-size, $regular-weight, $white-color);
     }
 }
+
+.btnSummer {
+    @include buttonStyles(14px 24px, $brand-color, $brand-light-color);
+
+    width: 156px;
+
+    text-align: center;
+    > button {
+        @include textStyles($default-text-size, $regular-weight, $white-color);
+    }
+}

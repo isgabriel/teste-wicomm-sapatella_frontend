@@ -4,7 +4,7 @@ import { Categories } from "./components/Categories";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { ImageSection } from "./components/ImageSection";
-// import { Modal } from "./components/Modal";
+import { MultiItemCarousel } from "./components/MultiItemsCarousel";
 import { PaymentItems } from "./components/PaymentItems";
 import { ProductHighlight } from "./components/ProductHighlight";
 import { RegisterSection } from "./components/RegisterSection";
@@ -17,9 +17,9 @@ function App() {
             <Header />
             <main>
                 <BannerCarousel />
-                {/* <Modal /> */}
                 <PaymentItems />
                 <Categories />
+                <MultiItemCarousel />
                 <ProductHighlight />
                 <ImageSection />
                 <AboutSection />
