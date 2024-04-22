@@ -9,6 +9,7 @@ import { MultiItemCarousel } from "./components/MultiItemsCarousel";
 import { PaymentItems } from "./components/PaymentItems";
 import { ProductHighlight } from "./components/ProductHighlight";
 import { RegisterSection } from "./components/RegisterSection";
+import { Seo } from "./components/Seo";
 import { SmallProductsSection } from "./components/SmallProductsSection";
 
 import "./styles/globals.scss";
@@ -16,6 +17,10 @@ import "./styles/globals.scss";
 function App() {
     return (
         <>
+            <Seo
+                title="Sapatella"
+                description="Oi, a gente já se conhece? Muito prazer, Sapatella! Somos uma Marca de moda que oferece sapatos e acessórios feitos para te encantar. Vamos juntas?"
+            />
             <Header />
             <main>
                 <BannerCarousel />
