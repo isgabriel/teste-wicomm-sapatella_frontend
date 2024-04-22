@@ -1,0 +1,42 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.topText {
+    @include flexColumnWithGap(24px);
+    > div {
+        > section p {
+            max-width: 200px;
+        }
+    }
+}
+.noText,
+.downText {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+
+    gap: 24px;
+}
+
+.noText {
+    > div a {
+        padding-top: 2px;
+    }
+}
+
+.downText {
+    > div {
+        margin: 0 auto;
+        text-align: center;
+        .btnWant {
+            padding-top: 11px;
+            margin: 0 auto;
+        }
+        > section {
+            line-height: 20px;
+            > p {
+                max-width: 230px;
+            }
+        }
+    }
+}

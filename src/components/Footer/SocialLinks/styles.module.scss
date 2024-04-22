@@ -1,0 +1,6 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.container {
+    @include flexRowWithGap(32px);
+}

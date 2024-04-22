@@ -1,0 +1,189 @@
+@use "/src/styles/abstracts/variables" as *;
+@use "/src/styles/abstracts/mixins" as *;
+
+.itemCard {
+    width: 277px;
+    @include flexColumn();
+    row-gap: 12px;
+
+    &:hover,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &:focus {
+        #infos {
+            bottom: 0;
+        }
+    }
+}
+.imageDiv {
+    position: relative;
+    overflow: hidden;
+
+    > img {
+        cursor: pointer;
+    }
+}
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px !important;
+    background-color: $brand-color;
+    color: $white-color;
+    font-size: 12px !important;
+}
+
+.iconDiv {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    > img {
+        cursor: pointer !important;
+    }
+}
+
+#infos {
+    position: absolute;
+    bottom: -97.2px;
+    left: 0;
+    z-index: 11;
+
+    width: 100%;
+
+    transition: all 0.3s ease;
+
+    backdrop-filter: blur(8px);
+    border-top: 1px solid $black03-color;
+}
+
+#swiperButtonCustom {
+    padding: 8px 0 !important;
+
+    background-color: rgba(231, 234, 225, 0.25);
+    opacity: 0.8;
+    > h4 {
+        @include textStyles(
+            $small-text-size,
+            $regular-weight,
+            $grey-dark-color
+        );
+        text-align: center;
+
+        margin-bottom: 8px;
+    }
+    .swiper {
+        margin: 0 40px !important;
+        width: calc(100% - 80px) !important;
+
+        background-color: transparent !important;
+        overflow: hidden !important;
+    }
+
+    .swiper-slide {
+        background-color: transparent !important;
+    }
+
+    .swiperButtonPrevCustom {
+        position: absolute;
+        left: 10px !important;
+        bottom: 37px !important;
+
+        > img {
+            cursor: pointer;
+        }
+    }
+
+    .swiperButtonNextCustom {
+        position: absolute;
+        right: 10px !important;
+        bottom: 41px !important;
+
+        transform: rotate(180deg);
+
+        > img {
+            cursor: pointer !important;
+        }
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.3 !important;
+    }
+}
+
+.selectedSize {
+    @include productSizeBasic($brand-color, $white-color, $brand-color);
+}
+.notSelectedSizes {
+    @include productSizeBasic($white-color, $black-color, $black03-color);
+}
+.infoButton {
+    @include textStyles($medium-text-size, $regular-weight, $white-color);
+
+    @include flexRow();
+    justify-content: center;
+    align-items: center;
+
+    background-color: $brand-color;
+
+    width: 100%;
+
+    padding: 10px 0 !important;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $brand-light-color;
+        transition: 0.6s;
+    }
+}
+.SwipperSizes {
+    @include flexColumn();
+    gap: 8px !important;
+    justify-content: center;
+    align-items: flex-start;
+
+    max-width: 180px !important;
+
+    > div {
+        @include flexRow();
+        gap: 8px !important;
+    }
+}
+.love {
+    width: 28px !important;
+}
+.textCard {
+    @include flexColumn();
+    align-items: flex-start;
+    row-gap: 4px;
+
+    .newPrice {
+        @include textStyles(
+            $default-text-size,
+            $regular-weight,
+            $grey-dark-color
+        );
+
+        margin-top: 18px;
+
+        vertical-align: middle !important;
+
+        line-height: 22px;
+
+        > span {
+            font-size: $medium-text-size;
+            text-decoration: line-through;
+
+            margin-left: 7px;
+        }
+    }
+    .installmentsText {
+        @include textStyles(
+            $small-text-size,
+            $regular-weight,
+            $grey-dark-color
+        );
+    }
+}

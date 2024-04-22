@@ -1,0 +1,13 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.registeInput {
+    padding: 11px 0 11px 12px;
+    border: 1px solid $black02-color;
+    @include textStyles($medium-text-size, $regular-weight, $black02-color);
+    width: 277px;
+
+    &::placeholder {
+        @include textStyles($medium-text-size, $regular-weight, $black02-color);
+    }
+}

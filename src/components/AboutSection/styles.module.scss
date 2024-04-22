@@ -1,0 +1,30 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.aboutContainer {
+    > div {
+        @include flexRowWithGap(133px);
+
+        padding: 72px;
+
+        justify-content: center;
+
+        > div {
+            @include flexColumnWithGap(16px);
+            justify-content: center;
+
+            > p {
+                @include textStyles(
+                    $medium-text-size,
+                    $regular-weight,
+                    $grey-dark-color
+                );
+
+                line-height: 20px;
+                letter-spacing: 0.5px;
+
+                max-width: 461px;
+            }
+        }
+    }
+}

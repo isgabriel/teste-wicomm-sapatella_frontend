@@ -1,0 +1,58 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.container {
+    @include flexRowWithGap(20px);
+    @include paddingStyles(40px, 56px);
+
+    background-color: $grey-light-color;
+
+    margin: 72px 0 0 0;
+
+    > article {
+        > div {
+            @include flexColumnWithGap(26px);
+            line-height: 18px;
+
+            > section {
+                @include flexColumnWithGap(8px);
+
+                > p {
+                    @include textStyles(
+                        $small-text-size,
+                        $regular-weight,
+                        $grey-dark-color
+                    );
+                }
+            }
+            > a {
+                @include flexRowWithGap(16px);
+                align-items: center;
+
+                &:hover {
+                    > img {
+                        margin-left: 10px;
+                        transition: all 0.4s ease-in-out;
+                    }
+                }
+
+                > p {
+                    @include textStyles(
+                        $default-text-size,
+                        $regular-weight,
+                        $grey-dark-color
+                    );
+
+                    cursor: pointer;
+                }
+                > img {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        > img {
+            max-width: 376px;
+        }
+    }
+}

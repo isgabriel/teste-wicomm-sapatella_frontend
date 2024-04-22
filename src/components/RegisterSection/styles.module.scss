@@ -1,0 +1,32 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.registerContainer {
+    @include paddingStyles(34px, 254px);
+
+    letter-spacing: 0.8px;
+
+    background-color: $grey-light-color;
+
+    > div {
+        @include flexColumnWithGap(13px);
+        align-items: center;
+        justify-content: center;
+
+        > h2 {
+            @include textStyles(
+                $medium-title-size,
+                $regular-weight,
+                $grey-dark-color
+            );
+
+            > span {
+                color: $brand-color;
+                font-weight: $bold-weight;
+            }
+        }
+        > div {
+            @include flexRowWithGap(20px);
+        }
+    }
+}

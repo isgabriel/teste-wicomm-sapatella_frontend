@@ -1,0 +1,18 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.nav {
+    > ul {
+        @include flexRowWithGap(24px);
+    }
+}
+.listItem {
+    > a {
+        @include textStyles($default-text-size, $regular-weight, $white-color);
+
+        cursor: pointer;
+    }
+    .off {
+        font-weight: $bold-weight;
+    }
+}

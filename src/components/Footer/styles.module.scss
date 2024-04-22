@@ -1,0 +1,17 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.contentDivFooter {
+    @include flexRowWithGap(127.8px);
+    padding: 48px 56px;
+}
+.logoAndSocialsContainer {
+    @include flexColumnWithGap(36px);
+}
+.mainFooterContainer,
+.allCompanyLinks {
+    @include flexRowWithGap(60px);
+}
+.paymentAndSafetyContainer {
+    @include flexColumnWithGap(48px);
+}

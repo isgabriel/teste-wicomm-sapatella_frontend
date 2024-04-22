@@ -1,0 +1,13 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.categoriesContainer {
+    > h2 {
+        text-align: center;
+        padding: 72px 0 32px;
+    }
+    > article {
+        @include flexRowWithGap(36px);
+        justify-content: center;
+    }
+}

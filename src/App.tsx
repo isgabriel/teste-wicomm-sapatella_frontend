@@ -1,7 +1,47 @@
+import { AboutSection } from "./components/AboutSection";
+import { BannerCarousel } from "./components/BannerCarousel";
+import { Categories } from "./components/Categories";
+import { FavoriteProducts } from "./components/FavoriteProducts";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { ImageSection } from "./components/ImageSection";
+import { MultiItemCarousel } from "./components/MultiItemsCarousel";
+import { PaymentItems } from "./components/PaymentItems";
+import { ProductHighlight } from "./components/ProductHighlight";
+import { RegisterSection } from "./components/RegisterSection";
+import { Seo } from "./components/Seo";
+import { SmallProductsSection } from "./components/SmallProductsSection";
+
+import "./styles/globals.scss";
+
 function App() {
     return (
         <>
-            <h1>Hello World!</h1>
+            <Seo
+                title="Sapatella"
+                description="Oi, a gente já se conhece? Muito prazer, Sapatella! Somos uma Marca de moda que oferece sapatos e acessórios feitos para te encantar. Vamos juntas?"
+            />
+            <Header />
+            <main>
+                <BannerCarousel />
+                <PaymentItems />
+                <Categories />
+                <MultiItemCarousel />
+                <FavoriteProducts
+                    props={{
+                        title: "Favoritos da Semana",
+                        totalSlides: 12,
+                        slidesPerGroup: 4,
+                        slidesPerView: 4,
+                    }}
+                />
+                <ProductHighlight />
+                <SmallProductsSection />
+                <ImageSection />
+                <AboutSection />
+                <RegisterSection />
+            </main>
+            <Footer />
         </>
     );
 }
