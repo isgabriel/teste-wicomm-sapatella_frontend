@@ -1,0 +1,170 @@
+@use "./abstracts/variables" as *;
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font: inherit;
+
+    font-family: "DM Sans", sans-serif;
+
+    vertical-align: baseline;
+
+    cursor: default;
+}
+html,
+border-style,
+#root {
+    width: 100%;
+    height: 100%;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $white-color;
+
+    overflow-x: hidden;
+
+    line-height: 1;
+}
+ul,
+ol {
+    list-style: none;
+}
+input {
+    cursor: text;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+    > img {
+        cursor: pointer;
+    }
+}
+button {
+    background-color: transparent;
+}
+
+#root {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    > div {
+        width: 100%;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 100%;
+
+    background-color: $white-color !important;
+    color: $black-color !important;
+
+    &:after {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 40px;
+        height: 40px;
+
+        line-height: 40px;
+        font-size: 24px;
+
+        margin: 0 auto !important;
+    }
+}
+
+.swiper-wrapper > .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-pagination {
+    > .swiper-pagination-bullet {
+        border-radius: 0;
+
+        background-color: $black03-color;
+
+        height: 8px;
+        width: 8px;
+
+        transition: all 0.3s ease-in-out;
+
+        opacity: 1;
+    }
+
+    > .swiper-pagination-bullet:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    > .swiper-pagination-bullet-active {
+        width: 16px !important;
+
+        background-color: $brand-color !important;
+    }
+}

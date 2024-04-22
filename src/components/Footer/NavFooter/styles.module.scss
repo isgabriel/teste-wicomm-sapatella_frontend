@@ -1,0 +1,26 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.container {
+    @include flexColumnWithGap(20px);
+
+    > ul {
+        @include flexColumnWithGap(14px);
+
+        > li a {
+            @include textStyles(
+                $medium-text-size,
+                $regular-weight,
+                $grey-dark-color
+            );
+            cursor: pointer;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+
+            &:hover {
+                color: $brand-color;
+                transition: 0.6s;
+            }
+        }
+    }
+}

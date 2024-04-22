@@ -75,10 +75,10 @@ const FooterData = {
             imageAlt: "imagem com cadeado e texto de criptigrafia",
         },
     ],
-    addredd:
+    address:
         "Somos Sonho LTA - Estrada do Campo D'areia, 182 - Pechincha - Rio de Janeiro/RJ - CEP: 22.743-310",
     cnpj: "CNPJ:28.445.729/0081-75 | © 2024 Todos dos direitos reservados",
-    endLogos: [{ logo: "assets/logo/logoBlack.svg" }],
+    logo: "assets/logo/logoBlack.svg",
 };
 
 export { FooterData };

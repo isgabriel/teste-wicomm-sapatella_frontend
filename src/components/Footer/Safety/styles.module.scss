@@ -1,0 +1,12 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.container {
+    @include flexColumnWithGap(20px);
+    > ul {
+        @include flexRowWithGap(16px);
+        flex-wrap: wrap;
+
+        max-width: 160px;
+    }
+}

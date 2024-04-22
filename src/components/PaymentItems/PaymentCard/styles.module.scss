@@ -1,0 +1,15 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.listItem {
+    @include flexRowWithGap(10px);
+    align-items: center;
+
+    > p {
+        @include textStyles(
+            $default-text-size,
+            $regular-weight,
+            $grey-dark-color
+        );
+    }
+}

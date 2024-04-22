@@ -1,0 +1,39 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.multiCarouselContainer {
+    @include flexColumn();
+
+    padding: 32px 155px;
+    margin-top: 72px;
+
+    background-color: $grey-light-color;
+}
+
+.divContent {
+    @include flexRowWithGap(123px);
+}
+.infosDiv {
+    min-width: 312px;
+
+    @include flexColumnWithGap(16px);
+    justify-content: center;
+
+    > p {
+        @include textStyles(
+            $small-text-size,
+            $regular-weight,
+            $grey-dark-color
+        );
+
+        letter-spacing: 0.5px;
+        line-height: 15px;
+
+        margin-bottom: 16px;
+
+        max-width: 273px;
+    }
+}
+.swiperDiv {
+    max-height: 402px;
+}

@@ -1,0 +1,15 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.categoryCardContainer {
+    @include flexColumnWithGap(14px);
+    align-items: center;
+
+    > p {
+        @include textStyles(
+            $small-title-size,
+            $regular-weight,
+            $grey-dark-color
+        );
+    }
+}

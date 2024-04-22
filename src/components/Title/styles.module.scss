@@ -1,0 +1,15 @@
+@use "/src/styles/abstracts/mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.bigTitle {
+    @include textStyles($big-title-size, $regular-weight, $grey-dark-color);
+}
+.mediumTitle {
+    @include textStyles($medium-title-size, $regular-weight, $grey-dark-color);
+}
+.smallTitle {
+    @include textStyles($small-title-size, $regular-weight, $grey-dark-color);
+}
+.superSmallTitle {
+    @include textStyles($small-text-size, $regular-weight, $grey-dark-color);
+}

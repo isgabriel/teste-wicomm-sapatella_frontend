@@ -1,0 +1,53 @@
+@mixin flexColumn() {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexRow() {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flexColumnWithGap($gap) {
+    @include flexColumn();
+    gap: $gap;
+}
+@mixin flexRowWithGap($gap) {
+    @include flexRow();
+    gap: $gap;
+}
+@mixin textStyles($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+@mixin buttonStyles($padding, $bg, $bg-hover) {
+    padding: $padding;
+
+    background-color: $bg;
+
+    cursor: pointer;
+
+    > button {
+        height: 100%;
+
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-color: $bg-hover;
+        transition: 0.6s;
+    }
+}
+@mixin paddingStyles($vertPadding, $horizPadding) {
+    padding: $vertPadding $horizPadding;
+}
+@mixin productSizeBasic($bg, $color, $border-color) {
+    background-color: $bg;
+    color: $color;
+
+    border: 1px solid $border-color;
+
+    padding: 6px !important;
+
+    font-size: 12px !important;
+    cursor: pointer;
+}

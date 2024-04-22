@@ -1,0 +1,20 @@
+@use "/src/styles/abstracts/variables" as *;
+@use "/src/styles/abstracts/mixins" as *;
+.smallSectionContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 72px 0 !important;
+    column-gap: 56px;
+    margin: 0 auto !important;
+
+    > section {
+        padding: 0 !important;
+
+        > div {
+            width: calc(100% - 650px) !important;
+        }
+        ._favoriteProductsContainer_1dfxb_1 > .productsDiv {
+            background-color: green !important;
+        }
+    }
+}
