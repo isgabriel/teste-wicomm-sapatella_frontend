@@ -16,6 +16,7 @@ const MultiItemCarousel = () => {
             <div className={styles.divContent}>
                 {SummerCard.map((item, index) => (
                     <div key={index} className={styles.infosDiv}>
+                        <span></span>
                         <Title text={item.title} classProp="mediumTitle" />
                         <p>{item.desc}</p>
                         <Button text={item.buttonText} classProps="btnSummer" />
@@ -31,7 +32,6 @@ const MultiItemCarousel = () => {
                     loop
                     pagination={{
                         clickable: true,
-                        //as barrinhas de indicadores ficam aqui, eu acho
                     }}
                     modules={[Autoplay, Pagination]}
                     effect="fade"

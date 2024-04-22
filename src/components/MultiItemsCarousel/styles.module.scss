@@ -19,6 +19,14 @@
     @include flexColumnWithGap(16px);
     justify-content: center;
 
+    > span {
+        background-color: $brand-color;
+
+        height: 4px;
+
+        width: 100%;
+        margin-bottom: 56px;
+    }
     > p {
         @include textStyles(
             $small-text-size,

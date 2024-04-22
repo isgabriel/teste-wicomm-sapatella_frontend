@@ -24,7 +24,7 @@
 }
 
 .btnSummer {
-    @include buttonStyles(14px 24px, $brand-color, $brand-light-color);
+    @include buttonStyles(14px 23px, $brand-color, $brand-light-color);
 
     width: 156px;
 
