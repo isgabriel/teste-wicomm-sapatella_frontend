@@ -8,11 +8,13 @@ interface logoProps {
 
 const Logo = ({ classProp, src, alt }: logoProps) => {
     return (
-        <img
-            src={src}
-            alt={alt}
-            className={classProp ? styles[classProp] : ""}
-        />
+        <a href="#">
+            <img
+                src={src}
+                alt={alt}
+                className={classProp ? styles[classProp] : ""}
+            />
+        </a>
     );
 };
 
