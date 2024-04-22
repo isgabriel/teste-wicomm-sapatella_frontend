@@ -5,7 +5,7 @@ const SmallProductsSection = () => {
     return (
         <section className={styles.smallSectionContainer}>
             <img
-                src="/public/assets/images/generalImages/imageSummer2Girls.svg"
+                src="assets/images/generalImages/imageSummer2Girls.svg"
                 alt="duas mulheres se divertindo no carnaval"
             />
 

@@ -15,4 +15,7 @@
         @include flexColumnWithGap(5px);
         align-items: center;
     }
+    > div {
+        @include flexRowWithGap(40px);
+    }
 }
