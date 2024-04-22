@@ -31,6 +31,7 @@ const MultiItemCarousel = () => {
                     loop
                     pagination={{
                         clickable: true,
+                        //as barrinhas de indicadores ficam aqui, eu acho
                     }}
                     modules={[Autoplay, Pagination]}
                     effect="fade"
@@ -42,7 +43,6 @@ const MultiItemCarousel = () => {
                                     src={image.image}
                                     alt={image.imageAlt}
                                     width={574}
-                                    height={502}
                                 />
                             </figure>
                         </SwiperSlide>

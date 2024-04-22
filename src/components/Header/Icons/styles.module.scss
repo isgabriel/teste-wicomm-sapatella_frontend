@@ -3,7 +3,44 @@
 
 .iconsContainer {
     @include flexRowWithGap(24px);
-    > button > img {
+    align-items: center;
+
+    button {
+        background: none;
+
+        border: none;
+
         cursor: pointer;
+
+        margin-right: 20px;
+
+        position: relative;
+
+        img {
+            cursor: pointer;
+
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .cartIcon {
+        position: relative;
+    }
+
+    .cartItemCount {
+        @include textStyles($small-text-size, $regular-weight, $white-color);
+
+        cursor: pointer;
+
+        position: absolute;
+        top: -13px;
+        right: -8px;
+
+        background-color: $brand-color;
+
+        padding: 2px 4px;
+
+        border-radius: 50%;
     }
 }

@@ -146,21 +146,20 @@ table {
 
 .swiper-pagination {
     > .swiper-pagination-bullet {
-        border-radius: 0 !important;
+        border-radius: 0;
 
-        background-color: $black03-color !important;
+        background-color: $black03-color;
 
-        height: 8px !important;
-        width: 8px !important;
+        height: 8px;
+        width: 8px;
 
-        transition: all 0.3s ease-in-out !important;
+        transition: all 0.3s ease-in-out;
 
-        filter: drop-shadow(0 0 8px var(--black));
-        opacity: 1 !important;
+        opacity: 1;
     }
 
     > .swiper-pagination-bullet:not(:last-child) {
-        margin-right: 8px !important;
+        margin-right: 8px;
     }
 
     > .swiper-pagination-bullet-active {
