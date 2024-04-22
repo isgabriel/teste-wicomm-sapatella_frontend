@@ -61,8 +61,8 @@
 #swiperButtonCustom {
     padding: 8px 0 !important;
 
-    background-color: rgba(231, 234, 225, 0.25);
-    opacity: 0.8;
+    background-color: rgba(231, 234, 225, 0.8);
+    opacity: 1;
     > h4 {
         @include textStyles(
             $small-text-size,
